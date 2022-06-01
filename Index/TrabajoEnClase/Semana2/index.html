@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Diseño de Aplicaciones Web Home</title>
+    <meta name="description" content="Curso de Diseño de Aplicaciones Web" />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+    <meta name="author" content="Beatriz Samper" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <header>
+            <div id="logo">
+                <img src="C:\Users\Estudiante\Desktop\Test\img\logoISW.png">
+                <h1><span>DAW</span> Diseño de Aplicaciones Web <sup>1.0</sup></h1>
+            </div>
+            <img id="splash" src="img\utnAdm.png">
+
+        </header>
+        <nav>
+            <div id="Container">
+                <a href="index.html" class="principal"> Home</a>
+                <a href="#" class="principal"> HTML</a>
+                <a href="#" class="principal"> CSS3</a>
+                <a href="#" class="principal"> JAVASCRIPT</a>
+                <a href="#" class="principal"> Acerca de</a>
+                <a href="#" class="principal"> Contactenos</a>
+
+            </div>
+        </nav>
+        <main id="principalcontent">
+            <div id="primarycontent">
+                <article class="POST">
+                    <div class="header">
+                        <h3>Diseño de Aplicaicones Web</h3>
+                    </div>
+                    <div class="content">
+                        <img class="pica floatleft" src="img\web_banner_1.png">
+                        <p>Diseño de Aplicaciones Web es un curso intensivo donde aprenderás las aplicaciones y recursos
+                            para el diseño y desarrollo de sitios web que se ajusten a las demandas actuales, dentro de
+                            los prIcipales temas que conocerás están: HTML5, CSS3, JavaScript, JQuery, Responsive
+                            (Bootstrap) y Rest API. En cada lección se verá un tema específico, se darán ejemplos,
+                            prácticas y trabajos para la comprensión adecuada</p>
+                    </div>
+                </article>
+
+                <article class="POST">
+                    <div class="header">
+                        <h3>Areas de Conocimiento</h3>
+                    </div>
+                    <div class="content">
+                        <p>El estudiante comprenderá el código HTML y su evolución a HTML5 y podrá utilizar de manera
+                            correcta las etiquetas. Entenderá la forma de aplicar e interactuar con las hojas de estilo
+                            en cascada (CSS3) de manera que permitan agilizar el proceso de diseño e implementación de
+                            un sitio web. Podrá aplicar eventos para elementos HTML con el lenguaje Javascript y podrá
+                            manipular la estructura y agregar efectos visuales con JQuery, así como consumir servicios
+                            web REST (REpresentational State Transfer) en formato de mensaje JSON y aplicación de
+                            estructura XML en los desarrollos WEB.</p>
+                        <p>Entre otros conceptos cubiertos está, la creación de sitios responsivos para ser visibles
+                            desde cualquier dispositivo con el uso de media queries y frameworks como Bootstrap, y por
+                            último introducirá en el desarrollo de aplicaciones del lado del servidor con el lenguaje
+                            PHP y/o ASP.net.</p>
+                    </div>
+                    <div class="footer">
+                        <ul>
+                            <li class="readmore"> <a href="#">Leer mas...</a></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="POST">
+                    <div class="header">
+                        <h3>Objetivos específicos del curso</h3>
+                    </div>
+                    <div class="content">
+                        <p>Obtener y aplicar los conocimientos necesarios en las tecnologías que permiten diseñar,
+                            desarrollar y publicar sitios web.</p>
+                        <ul>
+                            <li>Conocer los elementos y conceptos básicos que se involucran en la web para publicación
+                                de sitios.</li>
+                            <li>Conocer el lenguaje HTML y su evolución a HTML5 para desarrollar sitios web.</li>
+                            <li>Utilizar correctamente los selectores de estilo CSS3.</li>
+                            <li>Conocer el lenguaje Javascript, para elaborar enlaces con eventos en elementos html.
+                            </li>
+                            <li>Manipular la estructura de HTML y agregar efectos visuales con JQuery.</li>
+                            <li>Desarrollar sitios web responsivos con el framework Bootstrap.</li>
+                            <li>Consumir Servicios Web REST con formato JSON, con JavaScript y JQuery.</li>
+                            <li>Aplicar programación con XML en los desarrollos web.</li>
+                            <li>Conocer conceptos básicos del lenguaje PHP y/o ASP.net para desarrollo de aplicaciones
+                                del lado del servidor.</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="footer">
+                        <ul>
+                            <li class="readmore"> <a href="#">Leer mas...</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+
+            <aside id="secondarycontent">
+                <h3>Autor</h3>
+                <div class="content"></div>
+                <img src="img/Luz.png">
+                <p><strong> Beatriz Samper</strong>Alumno del curso<a href="#">Mas información...</a></p>
+    </div>
+    <h3>Temas a Desarrollar</h3>
+    <ul>
+        <li> <a href="#">Comentarios</a></li>
+        <li><a href="#">Formato Texto</a></li>
+        <li><a href="#">Párrafos</a></li>
+        <li><a href="#">Cabeceras</a></li>
+        <li><a href="#">Numeración y Listas</a></li>
+        <li><a href="#">Imágenes</a></li>
+        <li><a href="#">Enlaces</a></li>
+        <li><a href="#">Tablas</a></li>
+        <li><a href="#">Divisiones</a></li>
+
+
+    </ul>
+
+    </aside>
+    </main>
+    <footer>
+        <credit>&copy;; Derechos reservados ISW-DAW UTN II-2022</credit>
+        <div id="date">
+
+        </div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toLocaleDateString()
+        </script>
+    </footer>
+    </div>
+
+
+</body>
+
+</html>
