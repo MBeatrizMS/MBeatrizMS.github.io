@@ -1,0 +1,216 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /*investigar box-sizing*/
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f9f7 url('../img/a1.gif') repeat-x;
+    font-size: 11px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #8c8c73;
+    line-height: 18px;
+}
+
+a {
+    color: #ff7800;
+    text-decoration: underline;
+}
+
+a:hover {
+    /*seudoselector*/
+    text-decoration: none;
+}
+
+sup {
+    font-size: 0, 5em;
+}
+
+p {
+    margin-bottom: 14px/*margen exclusivo de abajo sino seria para todos*/
+    ;
+    text-align: justify;
+}
+
+img.picA {
+    /*el punto es para clase el # es para id*/
+    position: relative;
+    /*Investigar*/
+    top: -2px;
+    width: 104px;
+    height: 104px;
+    padding: 8px;
+}
+
+img.floatleft {
+    /*son ambas que sea img y la clase floatleft*/
+    float: left;
+    /*se acomoda buscando la izquierda*/
+    margin: 0px 14px 3px 0px;
+}
+
+.linklist {
+    /*aqui es cualquiera con esa clase*/
+    list-style: none;
+}
+
+ul.linklist li {
+    /*cualquier ul q tenga la clase link list aplquele el formato a las li unicamente*/
+    border-top: solid 1px #eeeeee;
+    padding-top: 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+ul.linklist li.first {
+    /*cualquier ul q tenga la clase link list aplquele el formato a las li unicamente*/
+    border-top: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#outer {
+    /*Investigar estos*/
+    position: relative;
+    width: 60%;
+    /*llega la 60% de toda la pantalla*/
+    margin: 0 auto;
+    margin-top: 10px;
+    /*Para q no quede pegado arriba*/
+    background: #FFF;
+    border: initial;
+    overflow: overlay;
+}
+
+header {
+    max-width: 100%;
+    height: 170px;
+}
+
+header #splash {
+    float: left;
+    width: 67%;
+    max-width: 100%;
+    height: 170px;
+}
+
+header #logo span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header #logo h1 {
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+header #logo sup {
+    color: #FCE2CA;
+}
+
+header #logo {
+    float: left;
+    background: #FF7800 url('../img/a8.gif') repeat-x;
+    width: 33%;
+    height: 170px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#principalcontent {
+    width: 100%;
+    background-color: white;
+}
+
+#secondarycontent {
+    width: 25%;
+    float: right;
+}
+
+#secondarycontent h3 {
+    font-size: 16px;
+    line-height: 25px;
+    color: #656551;
+    letter-spacing: -1;
+    background: url('../img/a22.gif') bottom repeat-x;
+    padding: 0px 0xp 10px 10px;
+    margin-bottom: 20px;
+}
+
+#secondarycontent content {
+    padding: 0px 10xp 0px 0px;
+    margin-bottom: 20px;
+}
+
+#primarycontent {
+    width: 74%;
+    float: left;
+    margin-right: 3px;
+}
+
+img.picB {
+    /*el punto es para clase el # es para id*/
+    position: relative;
+    /*Investigar*/
+    top: -2px;
+    width: 146px;
+    height: 147px;
+    padding: 7px;
+}
+
+#primarycontent h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #656551;
+    letter-spacing: -1;
+    background: url('../img/a22.gif') bottom repeat-x;
+    padding: 0px 0xp 10px 15px;
+    margin-bottom: 20px;
+}
+
+#primarycontent.POST {
+    margin-bottom: 30px;
+}
+
+#primarycontent .POST .content {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+#primarycontent .POST .footer {
+    background: url('../img/a33.gif') repeat-x;
+    height: 34px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+#primarycontent .POST .footer ul {
+    list-style: none;
+}
+
+#primarycontent .POST .footer ul li {
+    display: inline;
+    /*Investigar este elemento*/
+    line-height: 14px;
+    padding-left: 17px;
+    margin-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+
+#primarycontent .POST .footer ul li.readmore {
+    background-image: url('../img/a38.gif');
+}
+
+footer {
+    border-top: double;
+    clear: both;
+    /*Investigar esta otra etiqueta*/
+    height: 66px;
+    text-align: center;
+    color: #A8A88D;
+}

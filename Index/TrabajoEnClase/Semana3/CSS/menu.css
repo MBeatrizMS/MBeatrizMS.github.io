@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #5b5b34;
+}
+
+#Container .principal {
+    float: left;
+    color: white;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+}
+
+#Container a:hover {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#container a.last {
+    border-right: 0px;
+}
