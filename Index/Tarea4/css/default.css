@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('img/background.png');
+    background-image: url('background.png');
     font-size: 11px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
@@ -217,7 +217,7 @@ header #logo {
     line-height: 25px;
     color: #656551;
     letter-spacing: -1;
-    background: url('../img/a22.gif') bottom repeat-x;
+   /* background: url('../img/a22.gif') bottom repeat-x;*/
     padding: 0px 0xp 10px 15px;
     margin-bottom: 20px;
 }
@@ -232,7 +232,7 @@ header #logo {
     text-align: justify;
     margin-left: 5px;
 }
-
+/*
 #primarycontent .POST .footer {
     background: url('../img/a33.gif') repeat-x;
     height: 34px;
@@ -240,7 +240,7 @@ header #logo {
     text-align: right;
 }
 
-
+*/
 
 
 
@@ -263,7 +263,7 @@ footer {
     }
 
     #secondarycontent {
-        width: 64%;
+        width: 54%;
     }
 
     @media only screen and (max-width:600px) {
