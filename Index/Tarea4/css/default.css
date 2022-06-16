@@ -6,14 +6,15 @@
 }
 
 body {
-
     font-size: 11px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
     line-height: 18px;
+    background-image: url('images/background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+
 }
 
 #primarycontent {
