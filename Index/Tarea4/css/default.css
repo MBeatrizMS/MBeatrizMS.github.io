@@ -11,11 +11,9 @@ body {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
     line-height: 18px;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-
 }
 
 #primarycontent {
@@ -34,7 +32,6 @@ header {
     max-width: 880px;
     height: 250px;
     color: #0d942a;
-
 }
 
 header #volcano h1 {
@@ -43,7 +40,6 @@ header #volcano h1 {
     letter-spacing: -1px;
     color: #0d942a;
     text-align: top center;
-
 }
 
 header #volcano {
@@ -92,6 +88,7 @@ img.Rana {
     height: 300px;
     padding: 8px;
 }
+
 img.Arbol {
     /*el punto es para clase el # es para id*/
     position: relative;
@@ -114,12 +111,10 @@ ul li{
     float: left;
    }
 
-
 /*
 .linklist {
     /*aqui es cualquiera con esa clase*/
  /*   list-style: none;
-    
 }
 
 ul.linklist li {
@@ -150,9 +145,6 @@ ul.linklist li.first {
     overflow: overlay;
 }
 
-
-
-
 /*
 header #logo span {
     font-weight: bold;
@@ -160,11 +152,9 @@ header #logo span {
 }
 
 
-
 header #logo sup {
     color: #FCE2CA;
 }
-
 
 header #logo {
     float: left;
@@ -177,8 +167,6 @@ header #logo {
 }
 */
 
-
-
 #secondarycontent {
     width: 25%;
     float: right;
@@ -189,7 +177,6 @@ header #logo {
     line-height: 25px;
     color: #656551;
     letter-spacing: -1;
-   /* background: url('../img/a22.gif') bottom repeat-x;*/
     padding: 0px 0xp 10px 10px;
     margin-bottom: 20px;
 }
@@ -217,7 +204,6 @@ header #logo {
     line-height: 25px;
     color: #656551;
     letter-spacing: -1;
-   /* background: url('../img/a22.gif') bottom repeat-x;*/
     padding: 0px 0xp 10px 15px;
     margin-bottom: 20px;
 }
