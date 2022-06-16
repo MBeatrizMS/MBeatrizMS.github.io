@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('background.png');
+    background-image: url('../images/background.png');
     font-size: 11px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
@@ -259,11 +259,11 @@ footer {
 
 @media only screen and (max-width:2000px) {
     #primarycontent {
-        width: 35%;
+        width: 30%;
     }
 
     #secondarycontent {
-        width: 54%;
+        width: 79%;
     }
 
     @media only screen and (max-width:600px) {
