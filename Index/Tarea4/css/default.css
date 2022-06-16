@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('../images/background.png');
+    background-image: url('img/background.png');
     font-size: 11px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
@@ -189,7 +189,7 @@ header #logo {
     line-height: 25px;
     color: #656551;
     letter-spacing: -1;
-    background: url('../img/a22.gif') bottom repeat-x;
+   /* background: url('../img/a22.gif') bottom repeat-x;*/
     padding: 0px 0xp 10px 10px;
     margin-bottom: 20px;
 }
