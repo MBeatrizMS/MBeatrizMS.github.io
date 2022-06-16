@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('../images/background.png');
+    background-image: url('images\background.png');
     font-size: 11px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #8c8c73;
