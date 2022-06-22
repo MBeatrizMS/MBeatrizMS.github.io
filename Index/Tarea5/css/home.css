@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font: normal .8em arial, sans-serif;
+    color: #555;
+    background: url(../images/sun.png) left top no-repeat, url(../images/grass.png) bottom repeat-x, url(../images/back.png) repeat;
+}
+
+#container {
+    position: relative;
+    width: 50%;
+    /*llega la 60% de toda la pantalla*/
+    margin: 0 auto;
+    margin-top: 10px;
+    /*Para q no quede pegado arriba*/
+    background: #FFF;
+    border: initial;
+    overflow: overlay;
+}
+
+#header {
+    max-width: 880px;
+    height: 250px;
+}
+
+header #logo {
+    float: left;
+    width: auto;
+    height: auto;
+    color: #FFF;
+    padding: 1rem, 0, 1rem, 0;
+    margin: auto;
+}
+
+#barraNav .principal {
+    float: left;
+    color: #FFF;
+    background-color: #53C7FD;
+    /*border-right: 1px solid #fff;*/
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+}
+
+nav {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #53C7FD;
+}
+
+a {
+    color: #ff7800;
+    text-decoration: underline;
+}
+
+a:hover {
+    /*seudoselector*/
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 14px/*margen exclusivo de abajo sino seria para todos*/
+    ;
+    text-align: justify;
+}
+
+#tituloHome {
+    color: #E5017D;
+}
+
+#imgHome {
+    border: solid;
+}
+
+.costado {
+    background-color: #F5FEFF;
+    border-color: #C9E5E9;
+    border: solid 1px;
+    padding: 20px 20xp 20px 20px;
+    margin: 10px 10xp 10px 10px;
+}
+
+#secondary {
+    width: 25%;
+    float: right;
+    padding: 10px 10xp 10px 10px;
+    margin-bottom: 10px;
+}
+
+#secondary h2 {
+    font-size: 16px;
+    line-height: 25px;
+    color: lightgreen;
+    letter-spacing: -1;
+    padding: 10px 10xp 10px 10px;
+    margin-bottom: 20px;
+}
+
+#imgHome {
+    float: right;
+    border: 1px dotted black;
+    margin: 10px 10px 15px 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+#primary {
+    width: 74%;
+    float: left;
+    margin-right: 3px;
+}
+
+@media only screen and (max-width:992px) {
+    header #logo {
+        width: 100%
+    }
+    #container {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header #logo {
+        width: 100%
+    }
+    #container {
+        width: 100%
+    }
+}

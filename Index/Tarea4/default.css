@@ -14,7 +14,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-
 }
 
 #primarycontent {
@@ -26,7 +25,6 @@ body {
 header {
     max-width: 880px;
     height: 250px;
-
 }
 
 #header {
@@ -53,7 +51,6 @@ header #volcano {
     margin: auto;
 }
 
-
 #principalcontent {
     width: 100%;
     background-color: white;
@@ -75,7 +72,7 @@ sup {
 
 p {
     margin-bottom: 14px
-        /*margen exclusivo de abajo sino seria para todos*/
+    /*margen exclusivo de abajo sino seria para todos*/
     ;
     text-align: justify;
 }
@@ -107,27 +104,34 @@ img.floatleft {
     margin: 0px 14px 3px 0px;
 }
 
-ul li{
+ul li {
     width: 100px;
     float: left;
-   }
+}
+
 
 /*
 .linklist {
     /*aqui es cualquiera con esa clase*/
- /*   list-style: none;
+
+
+/*   list-style: none;
 }
 
 ul.linklist li {
     /*cualquier ul q tenga la clase link list aplquele el formato a las li unicamente*/
- /*   border-top: solid 1px #eeeeee;
+
+
+/*   border-top: solid 1px #eeeeee;
     padding-top: 5px;
     margin: 5px 0px 0px 0px;
 }
 
 ul.linklist li.first {
     /*cualquier ul q tenga la clase link list aplquele el formato a las li unicamente*/
- /*   border-top: 0px;
+
+
+/*   border-top: 0px;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -145,6 +149,7 @@ ul.linklist li.first {
     border: initial;
     overflow: overlay;
 }
+
 
 /*
 header #logo span {
@@ -188,11 +193,18 @@ header #logo {
 }
 
 
-
 /* img.picB { */
-    /*el punto es para clase el # es para id*/
+
+
+/*el punto es para clase el # es para id*/
+
+
 /*    position: relative; */
-    /*Investigar*/
+
+
+/*Investigar*/
+
+
 /*    top: -2px;
     width: 146px;
     height: 147px;
@@ -219,6 +231,8 @@ header #logo {
     text-align: justify;
     margin-left: 5px;
 }
+
+
 /*
 #primarycontent .POST .footer {
     background: url('../img/a33.gif') repeat-x;
@@ -229,9 +243,9 @@ header #logo {
 
 */
 
-
-
-
+.linklist {
+    display: inline-block;
+}
 
 footer {
     border-top: double;
@@ -241,42 +255,33 @@ footer {
     font-weight: 880px;
     text-align: center;
     background-color: #488000;
-    font:#FFF;
+    font: #FFF;
 }
 
 @media only screen and (max-width:2000px) {
     #primarycontent {
         width: 30%;
     }
-
     #secondarycontent {
         width: 69%;
     }
-
     @media only screen and (max-width:600px) {
         header #logo {
             width: 100%
         }
-
         #outer {
             width: 100%
         }
-
         header #splash {
             display: none;
         }
-
         #secondarycontent {
             width: 0%;
             display: none;
         }
-
         #primarycontent {
             width: 100%;
             margin: 0;
         }
-
     }
-
-
 }
