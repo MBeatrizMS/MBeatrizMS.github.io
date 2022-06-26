@@ -2,8 +2,11 @@ nav {
     display: flex;
     font-weight: 880px;
     height: 35px;
+    width: 100%;
     margin-bottom: 10px;
     background-color: #3c8036;
+    float: left;
+    /*outline: 1px solid red;*/
 }
 
 #Container .principal {
@@ -21,10 +24,16 @@ nav {
     font-weight: bold;
 }
 
-#Container a.last {
+nav #Container a:last-child
+{
     border-right: 0px;
 }
-
+/*
+.red
+{
+    color: red;
+}
+*/
 @media only screen and (max-width:600px) {
 
     nav #Container .principal {
