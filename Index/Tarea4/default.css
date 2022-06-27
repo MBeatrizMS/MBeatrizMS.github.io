@@ -8,7 +8,7 @@
 #outer {
     /*Investigar estos*/
     position: relative;
-    width: 70%;
+    width: 920px;
     /*llega la 60% de toda la pantalla*/
     margin: 0 auto;
     margin-top: 10px;
@@ -295,10 +295,10 @@ footer {
 
 @media only screen and (max-width:2000px) {
     #primarycontent {
-        width: 30%;
+        width: 200px;
     }
     #secondarycontent {
-        width: 69%;
+        width: 600px;
     }
 
 
@@ -308,16 +308,12 @@ footer {
         #outer {
             width: 100%
         }
-       /* header #splash {
-            display: none;
-        }*/
-        #secondarycontent {
-            width: 0%;
-            display: none;
-        }
+
         #primarycontent {
-            width: 100%;
-            margin: 0;
+            width: 100px;
+        }
+        #secondarycontent {
+            width: 300px;
         }
     }
 }
