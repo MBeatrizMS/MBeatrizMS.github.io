@@ -26,128 +26,291 @@ section {
 
 body {
     font: normal .8em arial, sans-serif;
+    background: #C4E9E8 url(../images/back.png) repeat-x;
     color: #555;
-    background: url(../images/sun.png) left top no-repeat, url(../images/grass.png) bottom repeat-x, url(../images/back.png) repeat;
 }
 
 #container {
+    background: transparent url(../images/grass.png) repeat-x bottom;
+}
+
+#fullcontent {
+    margin-top: -150px;
+    width: 880px;
+    padding: 10px 20px 30px 20px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border: 15px 15px 15px 15px;
+    background: #fff;
     position: relative;
-    width: 50%;
-    /*llega la 60% de toda la pantalla*/
-    margin: 0 auto;
-    margin-top: 10px;
-    /*Para q no quede pegado arriba*/
-    background: #FFF;
-    border: initial;
-    overflow: overlay;
+    /*Con este se posiciona al frente y no estorba el sol*/
 }
 
-#header {
-    max-width: 880px;
+
+/*centrar el contenido*/
+
+#fullcontent,
+header,
+#logo,
+nav,
+main,
+footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    width: 850px;
+    /* background: #FFF;
+  color: #FFF;*/
+}
+
+#logo {
+    width: 850px;
     height: 250px;
+    background: url(../images/logo.png) no-repeat;
 }
 
-header #logo {
-    float: left;
-    width: auto;
-    height: auto;
-    color: #FFF;
-    padding: 1rem, 0, 1rem, 0;
-    margin: auto;
-}
 
-#barraNav .principal {
-    float: left;
-    color: #FFF;
-    background-color: #53C7FD;
-    /*border-right: 1px solid #fff;*/
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 25px 10px 25px;
-}
+/*nav menu bar - Propiedades generales*/
 
 nav {
-    display: flex;
-    height: auto;
-    margin-bottom: 10px;
+    width: 846px;
+    height: 45px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #53C7FD;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu li>a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+    font: 150% 'Yanone Kaffeesatz', helvetica, arial, verdana, sans;
+    /*background-color: #53C7FD;*/
+}
+
+#menu>li {
+    float: left;
+    text-align: center
+}
+
+#menu li>a:hover {
+    color: #E5017D;
+    /*background-color: #53C7FD;*/
+}
+
+
+/*Para el submenu*/
+
+#menu>li>ul {
+    display: none;
+    position: absolute;
     background-color: #53C7FD;
 }
 
-a {
-    color: #ff7800;
-    text-decoration: underline;
+#menu>li:hover>ul {
+    display: block;
 }
 
-a:hover {
-    /*seudoselector*/
-    text-decoration: none;
+
+/*Articulo Principal*/
+
+#articulo {
+    text-align: left;
+    width: 620px;
+    padding: 10px 10px 25px 10px;
+    font: normal 150% "Yanone Kaffeesatz", arial, sans-serif;
+    margin-left: 10px;
 }
 
-p {
-    margin-bottom: 14px/*margen exclusivo de abajo sino seria para todos*/
-    ;
-    text-align: justify;
-}
 
-#tituloHome {
+/*Titulo del Articulo Principal*/
+
+#articulo>h1,
+h2 {
     color: #E5017D;
 }
 
-#imgHome {
-    border: solid;
-}
 
-.costado {
-    background-color: #F5FEFF;
-    border-color: #C9E5E9;
-    border: solid 1px;
-    padding: 20px 20xp 20px 20px;
-    margin: 10px 10xp 10px 10px;
-}
+/* Aside*/
 
-#secondary {
-    width: 25%;
+
+/* En general el costado // los cuadros*/
+
+#site_content {
     float: right;
-    padding: 10px 10xp 10px 10px;
-    margin-bottom: 10px;
+    padding: 10px 10px 25px 10px;
 }
 
-#secondary h2 {
-    font-size: 16px;
-    line-height: 25px;
-    color: lightgreen;
-    letter-spacing: -1;
-    padding: 10px 10xp 10px 10px;
-    margin-bottom: 20px;
+
+/*Estilo especifico de los cuadritos*/
+
+#site_content .sidebar {
+    font: normal 130% "Yanone Kaffeesatz", arial, sans-serif;
+    background: #F5FEFF;
+    border: 1px solid #C9E5E9;
+    border-radius: 20px;
+    width: 178px;
+    padding: 10px 10px 15px 10px;
+    /*Del texto con su propia caja*/
+    margin: 10px;
+    /*Para con el exterior*/
 }
 
-#imgHome {
-    float: right;
-    border: 1px dotted black;
-    margin: 10px 10px 15px 20px;
-    padding: 10px 10px 10px 10px;
+h4 {
+    font: normal 150% "Yanone Kaffeesatz", arial, sans-serif;
+    padding: 5px 20px 5px 0;
+    margin: 0;
+    color: #80E804;
 }
 
-#primary {
-    width: 74%;
-    float: left;
-    margin-right: 3px;
+
+/*los links de los cuadritos*/
+
+#site_content .sidebar>p>a {
+    color: rgb(26, 234, 238);
 }
 
-@media only screen and (max-width:992px) {
-    header #logo {
-        width: 100%
-    }
-    #container {
-        width: 100%
-    }
+
+/*Vamos a meter la lista del contenido principal*/
+
+ol {
+    /*Solo hay una lista ordenada en todo el doc, por lo q no especifico*/
+    margin: 2px 0 0 24px;
 }
 
-@media only screen and (max-width:600px) {
-    header #logo {
-        width: 100%
-    }
-    #container {
-        width: 100%
-    }
+
+/*ol li { 
+/*elementos de la lista ordenada*/
+
+
+/*  margin: 0 0 6px 0;
+}*/
+
+
+/*Footer*/
+
+footer {
+    width: 846px;
+    height: 100px;
+    /*padding: 25px 20px 25px 20px;*/
+    text-align: center;
+    background: #53C7FD;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border: 0 0 10px 10px;
+    font: 150% 'Yanone Kaffeesatz', arial, sans-serif;
+    /*text-decoration: none;*/
+    color: #FFF;
+    /*Color de las barras separadoras y del copyright*/
+    /*text-shadow: 1px 1px #0BA0E5;*/
+}
+
+footer p {
+    line-height: 2em;
+    padding: 0 0 4px 0;
+}
+
+footer a {
+    color: #FFF;
+}
+
+footer a:hover {
+    color: #E5017D;
+    text-shadow: none;
+}
+
+
+/*Articulos de la pag noticias*/
+
+#articulo1 {
+    background-color: #80E804;
+    width: 700px;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 0px 10px 50px;
+}
+
+#articulo2 {
+    background-color: aqua;
+    width: 700px;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    font: 150% 'Yanone Kaffeesatz', arial, sans-serif;
+    margin: 10px 0px 10px 50px;
+}
+
+
+/*Pagina de Galeria*/
+
+
+/*El texto sobre la tabla lo pase a clase pq 
+arriba lo tengo como id pero lo necesito esta reutilizando entonces deje
+ambos pero ahora solo voy a usar la clase*/
+
+.principal {
+    text-align: left;
+    width: 620px;
+    padding: 10px 10px 25px 10px;
+    font: normal 150% "Yanone Kaffeesatz", arial, sans-serif;
+    margin-left: 10px;
+}
+
+
+/*Texto sobre la tabla*/
+
+#texto-disponibles {
+    width: 850px;
+    height: 45px;
+    background: #53C7FD;
+    text-align: center;
+    color: #FFF;
+    padding-top: 20px;
+    font: 120% 'Yanone Kaffeesatz', arial, sans-serif;
+    margin: 0%;
+}
+
+
+/*Formato de la Tabla*/
+
+table,
+th,
+td {
+    padding: 10px 10px 10px;
+    margin: 10px 10px 10px;
+    width: 830px;
+    border-collapse: collapse;
+    /*Quita el borde enter las celdas de la tabla y no sirve si lo pongo abajo, tiene q ser en este general*/
+}
+
+.table-header-color {
+    color: #FFF;
+    background-color: #E5017D;
+}
+
+.table-row-color1 {
+    background-color: #FFF;
+}
+
+.table-row-color2 {
+    background-color: rgb(143, 218, 206);
+}
+
+.table img {
+    width: 100px;
+    height: 75px;
+}
+
+.table-footer-color {
+    color: #FFF;
+    background-color: #E5017D;
+    margin-bottom: 0%;
 }
