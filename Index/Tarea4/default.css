@@ -61,14 +61,20 @@ header #volcano h1 {
 }
 
 header #volcano {
-    float: left;
+    /*float: left;
     width: 100%;
     max-width: 100%;
     height: auto;
     color: #FFF;
-    padding: 0px;
-    margin: 0px;
-    /*outline: 1px solid red;*/
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+    outline: 1px solid red;
+    */
+    width: 880px;
+    height: 250px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+
 }
 
 header #volcano img{
