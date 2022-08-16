@@ -1,0 +1,9 @@
+#https://www.w3schools.com/git/git_ignore.asp
+# ignore ALL .log files
+*.docx
+*.pdf
+
+#https://stackoverflow.com/questions/13888223/command-to-open-file-with-git
+#vi <filename>               -- to open a file
+#i                           -- to insert into the file 
+#ESC button followed by :wq   -- to save and close the file 
