@@ -216,36 +216,29 @@ footer {
 }
 
 @media only screen and (max-width:992px) {
-    #primarycontent{
+    #primarycontent {
         width: 64%;
     }
-    #secondarycontent{
+    #secondarycontent {
         width: 35%;
     }
-
-@media only screen and (max-width:600px) {
-    header #logo {
-        width: 100%
+    @media only screen and (max-width:600px) {
+        header #logo {
+            width: 100%
+        }
+        #outer {
+            width: 100%
+        }
+        header #splash {
+            display: none;
+        }
+        #secondarycontent {
+            width: 0%;
+            display: none;
+        }
+        #primarycontent {
+            width: 100%;
+            margin: 0;
+        }
     }
-    
-    #outer {
-        width: 100%
-    }
-
-    header #splash {
-        display: none;
-    }
-
-    #secondarycontent{
-        width: 0%;
-        display: none;
-    }
-    #primarycontent{
-        width:100%;
-        margin: 0;
-    }
-
-}
-
-
 }
