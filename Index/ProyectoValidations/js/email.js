@@ -48,7 +48,7 @@ function sendEmail() {
         .then(
             message => {
                 if (message == "OK") {
-                    alert("Gracias por comunicarse con nostros, pronto entraremos en contacto de vuelta, una vez atendamos tu correo.")
+                    alert("Gracias por comunicarse con nostros, pronto algun miembro de nuestro equipo entrara en contacto con usted.")
                 } else {
                     alert(message)
                 }
