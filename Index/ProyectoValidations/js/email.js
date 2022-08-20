@@ -37,13 +37,39 @@ function sendEmail() {
         );
 }
 */
+
+
+
 function sendEmail() {
+
+    let name = document.getElementById("nomb").value;
+    let email = document.getElementById("correo").value;
+    let assunt = document.getElementById("sunto").value;
+    let fechaNacimiento = document.getElementById("birth").value;
+    let ingreso = document.getElementById("income").value;
+    let sexo = document.getElementById("sex");
+    let selected = sexo.options[sexo.selectedIndex].text;
+
+
+    let selected2 = [];
+    for (var option of document.getElementById("estudy").options) {
+        if (option.selected) {
+            selected2.push(option.text);
+        }
+        //$("#option option:selected").text();
+    }
+
+
+    let cuerpo = document.getElementById("body").value;
+
+
+
     Email.send({
             SecureToken: "016e9683-9a48-4e09-bde4-a6ee7772460d",
             To: "btrizsamper@gmail.com",
             From: "work53521@gmail.com",
-            Subject: "Test 9mil Email using javascript",
-            Body: "If you are reading this, applaud to the internet and to yourself"
+            Subject: assunt,
+            Body: "Hola, este es un mensaje de Universo Mascota, de parte del usuario:" + name + " el cual tiene el siguiente mensaje para vuestro equipo: " + cuerpo + " .  A continuacion informacion del usuario, brindada en el formulario.  Correo: " + email + ".  Ingreso: " + ingreso + ".  Fecha de Nacimiento: " + fechaNacimiento + ".  Sexo: " + selected + ".  Con grado academico: " + selected2
         })
         .then(
             message => {
@@ -55,7 +81,6 @@ function sendEmail() {
             }
         );
 }
-
 
 /*Attachments
 Email.send({
